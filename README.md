@@ -1,2 +1,2 @@
-# TelegramUI With Qml
+# TelegramUI With Qml C++
 Telegram UI designed in qml c++
