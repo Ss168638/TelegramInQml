@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ui/TopBar/TopBar.qml</file>
+        <file>ui/TopBar/CustomButton.qml</file>
+        <file>ui/assests/cross_gray.png</file>
+        <file>ui/assests/cross_white.png</file>
+        <file>ui/assests/maximize_gray.png</file>
+        <file>ui/assests/maximize_white.png</file>
+        <file>ui/assests/mimimize_gray.png</file>
+        <file>ui/assests/mimimize_white.png</file>
+        <file>ui/assests/hide_gray.png</file>
+        <file>ui/assests/hide_white.png</file>
+        <file>ui/LeftScreen/LeftScreen.qml</file>
+        <file>ui/RightScreen/RightScreen.qml</file>
+    </qresource>
+</RCC>
