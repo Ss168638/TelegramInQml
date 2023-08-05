@@ -3,15 +3,38 @@
         <file>main.qml</file>
         <file>ui/TopBar/TopBar.qml</file>
         <file>ui/TopBar/CustomButton.qml</file>
+        <file>ui/LeftScreen/LeftScreen.qml</file>
+        <file>ui/RightScreen/RightScreen.qml</file>
         <file>ui/assests/cross_gray.png</file>
         <file>ui/assests/cross_white.png</file>
+        <file>ui/assests/hide_gray.png</file>
+        <file>ui/assests/hide_white.png</file>
         <file>ui/assests/maximize_gray.png</file>
         <file>ui/assests/maximize_white.png</file>
         <file>ui/assests/mimimize_gray.png</file>
         <file>ui/assests/mimimize_white.png</file>
-        <file>ui/assests/hide_gray.png</file>
-        <file>ui/assests/hide_white.png</file>
-        <file>ui/LeftScreen/LeftScreen.qml</file>
-        <file>ui/RightScreen/RightScreen.qml</file>
+        <file>ui/assests/telegram.png</file>
+        <file>ui/RightScreen/MyTextRect_DefaultScreen.qml</file>
+        <file>ui/LeftScreen/MyTopLeftScreen.qml</file>
+        <file>ui/LeftScreen/MyListViewContainer.qml</file>
+        <file>ui/InfoPage/InfoPage.qml</file>
+        <file>ui/InfoPage/UserInfoTopBar.qml</file>
+        <file>ui/InfoPage/MyFooterRect.qml</file>
+        <file>ui/InfoPage/MySettingsListView.qml</file>
+        <file>ui/RightScreen/ChatPage.qml</file>
+        <file>ui/RightScreen/ChatToolBar.qml</file>
+        <file>ui/RightScreen/+material/ChatToolBar.qml</file>
+        <file>ui/assests/dot.png</file>
+        <file>ui/assests/search.png</file>
+        <file>ui/SettingsPage/CreateGroupPage.qml</file>
+        <file>ui/SettingsPage/GroupSettingRect.qml</file>
+        <file>ui/SettingsPage/GroupName.qml</file>
+        <file>ui/assests/template_image.png</file>
+        <file>ui/SettingsPage/ChannelPage.qml</file>
+        <file>ui/SettingsPage/ContactsPage.qml</file>
+        <file>ui/SettingsPage/CustomButton.qml</file>
+        <file>ui/assests/profile.png</file>
+        <file>ui/assests/menu_gray.png</file>
+        <file>ui/assests/menu_white.png</file>
     </qresource>
 </RCC>
