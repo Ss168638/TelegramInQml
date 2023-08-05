@@ -1,16 +1,19 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQml 2.12
+import QtQuick.Controls 1.4
+import QtQuick.Layouts 1.12
+import MyConversationModel 1.0
 import "ui/TopBar"
 import "ui/LeftScreen"
 import "ui/RightScreen"
+import "ui/InfoPage"
+import "ui/SettingsPage"
 
 Window {
     id: root
-    width: 640
+    width: 800
     height: 480
-    x: 200
-    y: 20
     visible: true
     flags: Qt.FramelessWindowHint |
            Qt.WindowMinimizeButtonHint |
@@ -19,8 +22,6 @@ Window {
            Qt.Window
     visibility: Window.Windowed
     title: qsTr("My Telegram App")
-
-//    property string leftScreenMenuColor: "#17212b"
 
     Connections{
         target: topBar
@@ -35,11 +36,77 @@ Window {
     TopBar{
         id: topBar
     }
-    LeftScreen{
-        id: leftScreen
+
+    SplitView{
+        id: splitView
+        opacity: 1
+        antialiasing: true
+        focus: true
+        anchors{
+            top: topBar.bottom
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+        }
+
+        LeftScreen{
+            id: leftScreen
+            Layout.minimumWidth: 200
+
+        }
+
+        RightScreen{
+            id: rightScreen
+            Layout.minimumWidth: 300
+        }
+
     }
 
-    RightScreen{
-        id: rightScreen
+    InfoPage{
+        id: userinfoPage
+        visible: false
+    }
+
+    SqlConversationModel{
+        id: conversationModel
+        userName: "User Name"
+    }
+
+    CreateGroupPage{
+        id: groupCreationPage
+        visible: false
+    }
+
+    ChannelPage{
+        id: channelPage
+        visible: false
+    }
+
+    ContactsPage{
+        id: contactsPage
+        visible: false
+    }
+
+
+    Connections{
+        target: userinfoPage
+        onOpenPage: function(name)
+        {
+            switch(name)
+            {
+            case "New Group": groupCreationPage.typeName = name ; groupCreationPage.typeName = name; groupCreationPage.visible = true;  break;
+                case "New Channel": channelPage.typeName = name ; channelPage.typeName = name; channelPage.visible = true;  break;
+                case "Contacts": contactsPage.visible = true ; break;
+                case "Calls": break;
+                case "Settings": break;
+            }
+            root.opacity = 0.99
+        }
     }
 }
+
+/*##^##
+Designer {
+    D{i:0;formeditorZoom:0.5}
+}
+##^##*/
